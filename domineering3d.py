@@ -1,11 +1,11 @@
 #rescale to 5x5x5
 
-import random
+from random import randint
 
 def rand_3tuples(n, m):
 	items = []
 	for i in range(m):
-		items.append((random.randint(0,n-2),random.randint(0,n-2),random.randint(0,n-2)))
+		items.append((randint(0,n-2),randint(0,n-2),randint(0,n-2)))
 
 	return items
 
